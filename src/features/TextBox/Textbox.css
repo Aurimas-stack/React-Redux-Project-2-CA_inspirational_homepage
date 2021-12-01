@@ -1,0 +1,36 @@
+#textbox {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(182, 179, 179);
+    width:85%;
+    border-radius:10px;
+    padding:20px;
+}
+#question {
+    color:#fff;
+    font-size: 2.1rem;
+    padding:0;
+}
+form {
+    width: 98%;
+}
+#text-input {
+    width:100%;
+    border:none;
+    padding:10px;
+    background-color: none;
+    border-bottom: 2px solid #fff;
+    color:#fff;
+    font-weight: 600;
+}
+input[type="text"] {
+    background: none;
+}
+#text-input:focus {
+    outline: none !important;
+}
+#text-input::placeholder {
+    color:#000;
+    font-weight: 600;
+}

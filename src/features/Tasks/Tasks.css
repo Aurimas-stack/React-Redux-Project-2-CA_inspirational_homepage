@@ -1,0 +1,60 @@
+#task-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(182, 179, 179);
+    width:85%;
+    border-radius:10px;
+    padding:20px;
+    margin-top:50px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+.task {
+    margin:15px;
+    padding:20px;
+    border-radius: 15px;
+    color:#fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    font-size:1.1rem;
+}
+.buttonsOn {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buttonsOn > :nth-child(1) {
+    left:65px;
+}
+.btn {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+    padding:3px;
+    color:#fff;
+    font-weight: 600;
+    position:absolute;
+    bottom:30px;
+    left:-5px;
+    z-index: 2;
+}
+.remove {
+    background: rgba(208, 2, 27, 0.25);
+}
+.done {
+    background: rgba(80, 227, 194, 0.25);
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    border:1px solid rgba(255, 255, 255, 0.397);
+}
+.taskon {
+    display:block;
+}
+.off {
+    display:none;
+}
