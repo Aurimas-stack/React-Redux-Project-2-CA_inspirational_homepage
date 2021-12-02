@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 export function Tasks() {
     const [isActive, setActive] = useState(null);
     const [currTasks, setTasks] = useState(null);
+    const [taskDone, setTaskDone] = useState([]);
     const tasks = useSelector(selectText);
     let colors = ['#457b9d',  '#e63946', '#588157', '#f77f00'];
 
@@ -17,6 +18,13 @@ export function Tasks() {
         setTasks(tasks)
     },[tasks])
 
+
+    const addTaskDone = (e) => {
+        e.preventDefault();
+        if(!taskDone.includes(isActive)) {
+            setTaskDone([...taskDone, isActive])
+        }
+    }
 
     const removeItem = (e) => {
         e.preventDefault();
@@ -37,13 +45,13 @@ export function Tasks() {
                         <div 
                         key={i}
                         className='task'
-                        style={{backgroundColor: color[0]}}
+                        style={taskDone.includes(i) ? {backgroundColor: color[0], opacity: 0.4}:{backgroundColor: color[0]}}
                         onMouseEnter={() => toggleClass(i)}
                         onMouseLeave={() => toggleClass(i)}
                         >
                         {task}
                         <div className={ isActive === i ? 'buttonsOn' : 'off'}>
-                            <button className='done btn'>Done</button>
+                            <button className='done btn' onClick={addTaskDone}>Done</button>
                             <button className='remove btn' onClick={removeItem}>Remove</button>
                         </div>
                         </div>
