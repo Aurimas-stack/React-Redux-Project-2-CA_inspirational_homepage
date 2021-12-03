@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const loadWeather = createAsyncThunk(
     "weather/loadWeather",
     async({lat, long}) => {
-        const apiKey = 'dfe577de71ea5813ced8716b9cf3a84d';
+        const apiKey = '';
         const link = `https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
         const data = await fetch(link);
         const json = await data.json();
