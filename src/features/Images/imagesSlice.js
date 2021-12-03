@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const loadImage = createAsyncThunk(
     "image/getImage",
     async() => {
-        const apiKey = 'JbY5DkAIxjXte_atw6NxtH6pjyctS66c6XUZPflK74Q';
+        const apiKey = '';
         const link = `https://api.unsplash.com/photos/?client_id=${apiKey}`;
         const data = await fetch(link);
         const json = await data.json();
