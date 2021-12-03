@@ -5,6 +5,7 @@ import { Tasks } from './features/Tasks/Tasks';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectImage, loadImage } from './features/Images/imagesSlice';
 import { Quotes } from './features/Quotes/Quotes';
+import { Weather } from './features/Weather/Weather';
 
 function App() {
   const [currImg, setImg] = useState('')
@@ -40,11 +41,12 @@ function App() {
     <div className="App" style={ 
       currImg !== ''? 
       {
-        backgroundImage: `url(${currImg.urls.regular})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', 
+        backgroundImage: `url(${currImg.urls.full})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', 
         backgroundPosition: 'center', minHeight: '100vh'
       } 
     : {}
     }>
+      <Weather />
       <div id='main-boxes'>
         <Textbox />
         <Tasks />
