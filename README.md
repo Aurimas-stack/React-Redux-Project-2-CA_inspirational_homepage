@@ -1,4 +1,4 @@
-Single page project done using CodeAcademy "Inspirational_homepage". 
+Single page project done using CodeAcademy "Inspirational_homepage" requirements. 
 
 Project was done with React hooks & Redux for state management.
 

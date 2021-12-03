@@ -15,7 +15,7 @@ export function Weather() {
         })
     }
     },[dispatch])
-    if (weather[0] !== undefined) {
+    if (weather[0] !== undefined && weather !== undefined) {
         icon = weather[0].weather[0].icon;
         description = weather[0].weather[0].description;
         temp = weather[0].main.temp;
@@ -28,7 +28,7 @@ export function Weather() {
             icon !== undefined ?
             <div className='weather-container'>
                 <div className='temp-icon'>
-                    <img src={`https://openweathermap.org/img/wn/${icon}`} alt='icon'/> 
+                    <img src={`https://openweathermap.org/img/wn/${icon}.png`} alt='icon'/> 
                     <h4>{temp}°C</h4> 
                 </div>
                 <h4>{description}</h4>
