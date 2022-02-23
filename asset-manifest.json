@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-Redux-Project-2-CA_inspirational_homepage/static/css/main.88f722d3.chunk.css",
+    "main.js": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/main.2f9ccdda.chunk.js",
+    "main.js.map": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/main.2f9ccdda.chunk.js.map",
+    "runtime-main.js": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/runtime-main.e5e563e9.js",
+    "runtime-main.js.map": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/runtime-main.e5e563e9.js.map",
+    "static/js/2.1fa5e099.chunk.js": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/2.1fa5e099.chunk.js",
+    "static/js/2.1fa5e099.chunk.js.map": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/2.1fa5e099.chunk.js.map",
+    "index.html": "/React-Redux-Project-2-CA_inspirational_homepage/index.html",
+    "static/css/main.88f722d3.chunk.css.map": "/React-Redux-Project-2-CA_inspirational_homepage/static/css/main.88f722d3.chunk.css.map",
+    "static/js/2.1fa5e099.chunk.js.LICENSE.txt": "/React-Redux-Project-2-CA_inspirational_homepage/static/js/2.1fa5e099.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5e563e9.js",
+    "static/js/2.1fa5e099.chunk.js",
+    "static/css/main.88f722d3.chunk.css",
+    "static/js/main.2f9ccdda.chunk.js"
+  ]
+}
